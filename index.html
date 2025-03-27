@@ -47,10 +47,11 @@
       text-align: center;
     }
     #agent-id {
+      float: left;
       display: block;
-      max-width: 75%;
+      max-width: 50%;
       height: auto;
-      margin: 1rem auto;
+      margin: 1rem 1vw;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -98,7 +99,7 @@
 
   <div id="typewriter">
     <div id="access-granted">ACCESS GRANTED</div>
-    <img id="agent-id" src="./e38ed100-1e5d-441c-a5b6-caa249e45ae5.jpg" alt="Agent ID Card" />
+    <img id="agent-id" src="./agent-id.jpg" alt="Agent ID Card" />
   </div>
 
   <audio id="type-sound" src="https://www.soundjay.com/mechanical/typewriter-key-1.mp3" preload="auto"></audio>
@@ -108,7 +109,7 @@
 
     function checkPassword() {
       const password = document.getElementById("password").value;
-      if (password === "Georgia") {
+      if (password === "mccartney" || password === "Mccartney" || password === "McCartney") {
         document.getElementById("typewriter").style.display = "block";
         document.getElementById("login").style.display = "none";
         typeLetterByLetter();
@@ -165,7 +166,7 @@ DURATION: 4 of luxury, laughter, and light-to-moderate mischief
 
 Reply “Je suis prête” to confirm.
 
-This message will self-destruct upon arrival in Paris… or after too much prosecco.
+This message will self-destruct upon arrival in Paris… or after too much champagne.
 
 End of transmission.`;
 
